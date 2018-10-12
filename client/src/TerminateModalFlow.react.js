@@ -2,7 +2,7 @@ import _ from 'lodash'
 import React from 'react'
 
 import ConfirmEmailModal from './ConfirmEmailModal.react'
-import TransferOwnershipModal from './TransferOwnershipModal.react'
+import TransferOwnershipModal from './components/TransferOwnershipModal'
 import FeedbackSurveyModal from './FeedbackSurveyModal.react'
 import { submitToSurveyMonkeyDeleteAccount } from './SurveyService'
 import * as LoadState from './LoadState'
