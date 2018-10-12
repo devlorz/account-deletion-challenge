@@ -1,13 +1,13 @@
 import _ from 'lodash'
 import React from 'react'
 
-import ConfirmEmailModal from './ConfirmEmailModal.react'
-import TransferOwnershipModal from './components/TransferOwnershipModal'
-import FeedbackSurveyModal from './FeedbackSurveyModal.react'
-import { submitToSurveyMonkeyDeleteAccount } from './SurveyService'
-import * as LoadState from './LoadState'
-import AssignOwnership from './components/AssignOwnership'
-import WorkspaceGroupRows from './components/WorkspaceGroupRows'
+import ConfirmEmailModal from './ConfirmEmailModal'
+import TransferOwnershipModal from '../components/TransferOwnershipModal'
+import FeedbackSurveyModal from './FeedbackSurveyModal'
+import { submitToSurveyMonkeyDeleteAccount } from '../SurveyService'
+import * as LoadState from '../LoadState'
+import AssignOwnership from '../components/AssignOwnership'
+import WorkspaceGroupRows from '../components/WorkspaceGroupRows'
 
 export default class TerminateModalFlow extends React.Component {
   static propTypes = {
