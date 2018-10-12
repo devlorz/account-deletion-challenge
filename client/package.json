@@ -2,11 +2,14 @@
   "name": "account-deletion-challenge",
   "license": "MIT",
   "scripts": {
-    "serve": "cross-env NODE_ENV=development parcel src/index.html --out-dir out"
+    "serve": "cross-env NODE_ENV=development parcel src/index.html --out-dir out",
+    "cypress:open": "cypress open"
   },
   "devDependencies": {
     "babel-plugin-transform-class-properties": "^6.24.1",
-    "cross-env": "5.1.4"
+    "cross-env": "5.1.4",
+    "cypress": "^3.1.0",
+    "cypress-testing-library": "^2.3.0"
   },
   "dependencies": {
     "autoprefixer": "8.2.0",
