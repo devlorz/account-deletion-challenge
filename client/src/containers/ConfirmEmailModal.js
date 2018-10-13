@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 
 import { isLoading } from '../LoadState'
+import FormInputPassword from '../components/FormInputPassword'
 
 class ConfirmEmailModal extends React.PureComponent {
   static propTypes = {
@@ -33,15 +34,10 @@ class ConfirmEmailModal extends React.PureComponent {
   renderFormInputPasssword = () => {
     const errorMessage = _.get(this.props.terminateAccountStatus, 'error', null)
     return (
-      <div>
-        <input
-          type="text"
-          placeholder="ross@example.com"
-          style={{ width: '350px' }}
-          onChange={this.props.onTypeEmail}
-        />
-        <span style={{ color: 'red' }}>{errorMessage}</span>
-      </div>
+      <FormInputPassword
+        onTypeEmail={this.props.onTypeEmail}
+        errorMessage={errorMessage}
+      />
     )
   }
 
