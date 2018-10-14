@@ -3,7 +3,7 @@
   "license": "MIT",
   "scripts": {
     "serve": "cross-env NODE_ENV=development parcel src/index.html --out-dir out",
-    "cypress:open": "cypress open",
+    "cypress": "cypress open",
     "test": "jest"
   },
   "devDependencies": {
