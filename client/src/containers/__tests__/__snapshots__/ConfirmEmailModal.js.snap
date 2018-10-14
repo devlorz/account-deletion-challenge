@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot 1`] = `
+<div
+  data-reactroot=""
+>
+  <h1>
+    Delete account
+  </h1>
+  <p>
+    This action cannot be undone.
+  </p>
+  <div>
+    <!-- react-text: 5 -->
+    Please enter your email: 
+    <!-- /react-text -->
+    <div>
+      <input
+        placeholder="ross@example.com"
+        style="width: 350px;"
+        type="text"
+      />
+      <span
+        style="color: red;"
+      />
+    </div>
+  </div>
+  <div
+    style="margin-top: 1rem;"
+  >
+    <label>
+      <input
+        type="checkbox"
+        value="on"
+      />
+      <!-- react-text: 12 -->
+      I understand the consequences.
+      <!-- /react-text -->
+    </label>
+  </div>
+  <div>
+    <button>
+      Back
+    </button>
+    <button
+      disabled=""
+    >
+      Delete my account
+    </button>
+  </div>
+</div>
+`;
