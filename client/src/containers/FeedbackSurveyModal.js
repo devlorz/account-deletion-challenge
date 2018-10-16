@@ -4,6 +4,7 @@ import React from 'react'
 
 import { feedbackSurveyItems } from '../FeedbackSurveyItems'
 import Buttons from '../components/Buttons'
+import CommentForm from '../components/CommentForm'
 
 class FeedbackSurveyModal extends React.PureComponent {
   static propTypes = {
@@ -56,28 +57,6 @@ class FeedbackSurveyModal extends React.PureComponent {
     )
   }
 
-  renderCommentForm() {
-    if (!this.props.showCommentForm) return
-    return (
-      <div style={{ marginTop: '2rem' }}>
-        Comments:
-        <div>
-          <textarea
-            type="text"
-            name="comment"
-            style={
-              this.state.isFocusCommentBox
-                ? { border: '1px solid blue' }
-                : { border: '1px solid black' }
-            }
-            onChange={this.props.onChangeComment}
-            value={this.props.comment}
-          />
-        </div>
-      </div>
-    )
-  }
-
   render() {
     return (
       <div>
@@ -97,7 +76,12 @@ class FeedbackSurveyModal extends React.PureComponent {
             </div>
           ))}
         </div>
-        {this.renderCommentForm()}
+        <CommentForm
+          isFocusCommentBox={this.state.isFocusCommentBox}
+          onChangeComment={this.props.onChangeComment}
+          comment={this.props.comment}
+          showCommentForm={this.props.showCommentForm}
+        />
         <Buttons
           disabled={this.hasAllUnchecked()}
           onBackButton={this.props.onBackButton}

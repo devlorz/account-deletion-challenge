@@ -16,3 +16,17 @@ test('snapshot', () => {
   )
   expect(container.firstChild).toMatchSnapshot()
 })
+
+test('snapshot with no show comment', () => {
+  const { container } = render(
+    <FeedbackSurveyModal
+      title="Why would you leave us?"
+      onSubmit={jest.fn()}
+      onBackButton={jest.fn()}
+      showCommentForm={false}
+      comment={''}
+      onChangeComment={jest.fn()}
+    />
+  )
+  expect(container.firstChild).toMatchSnapshot()
+})

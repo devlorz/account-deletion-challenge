@@ -123,3 +123,114 @@ exports[`snapshot 1`] = `
   </div>
 </div>
 `;
+
+exports[`snapshot with no show comment 1`] = `
+<div
+  data-reactroot=""
+>
+  <h1>
+    Why would you leave us?
+  </h1>
+  <div>
+    <div>
+      <label>
+        <input
+          type="checkbox"
+          value="on"
+        />
+        <!-- react-text: 7 -->
+        I do not understand how to use this.
+        <!-- /react-text -->
+      </label>
+    </div>
+    <div>
+      <label>
+        <input
+          type="checkbox"
+          value="on"
+        />
+        <!-- react-text: 11 -->
+        I do not need this.
+        <!-- /react-text -->
+      </label>
+    </div>
+    <div>
+      <label>
+        <input
+          type="checkbox"
+          value="on"
+        />
+        <!-- react-text: 15 -->
+        I prefer other apps.
+        <!-- /react-text -->
+      </label>
+    </div>
+    <div>
+      <label>
+        <input
+          type="checkbox"
+          value="on"
+        />
+        <!-- react-text: 19 -->
+        I cannot find the features that I want.
+        <!-- /react-text -->
+      </label>
+    </div>
+    <div>
+      <label>
+        <input
+          type="checkbox"
+          value="on"
+        />
+        <!-- react-text: 23 -->
+        I found this had too many bugs.
+        <!-- /react-text -->
+      </label>
+    </div>
+    <div>
+      <label>
+        <input
+          type="checkbox"
+          value="on"
+        />
+        <!-- react-text: 27 -->
+        I found this was too expensive.
+        <!-- /react-text -->
+      </label>
+    </div>
+    <div>
+      <label>
+        <input
+          type="checkbox"
+          value="on"
+        />
+        <!-- react-text: 31 -->
+        I found this was too slow.
+        <!-- /react-text -->
+      </label>
+    </div>
+    <div>
+      <label>
+        <input
+          type="checkbox"
+          value="on"
+        />
+        <!-- react-text: 35 -->
+        Other reason(s)...
+        <!-- /react-text -->
+      </label>
+    </div>
+  </div>
+  <!-- react-empty: 36 -->
+  <div>
+    <button>
+      Back
+    </button>
+    <button
+      disabled=""
+    >
+      Next
+    </button>
+  </div>
+</div>
+`;

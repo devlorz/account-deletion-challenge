@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot 1`] = `
+<div
+  data-reactroot=""
+  style="margin-top: 2rem;"
+>
+  <!-- react-text: 2 -->
+  Comments:
+  <!-- /react-text -->
+  <div>
+    <textarea
+      name="comment"
+      style="border: 1px solid blue;"
+      type="text"
+    >
+      Comment Text
+    </textarea>
+  </div>
+</div>
+`;
