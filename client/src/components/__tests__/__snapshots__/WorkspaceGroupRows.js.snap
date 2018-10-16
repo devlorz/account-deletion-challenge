@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot 1`] = `
+<div
+  data-reactroot=""
+>
+  <h3>
+    The following workspaces require ownership transfer:
+  </h3>
+  <div>
+    <div
+      style="margin-top: 1rem;"
+    >
+      <span>
+        <!-- react-text: 6 -->
+        Workspace: 
+        <!-- /react-text -->
+        <!-- react-text: 7 -->
+        Lightning strike
+        <!-- /react-text -->
+      </span>
+      <span />
+    </div>
+  </div>
+</div>
+`;
