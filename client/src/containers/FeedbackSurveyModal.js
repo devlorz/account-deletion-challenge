@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 
 import { feedbackSurveyItems } from '../FeedbackSurveyItems'
+import Buttons from '../components/Buttons'
 
 class FeedbackSurveyModal extends React.PureComponent {
   static propTypes = {
@@ -55,17 +56,6 @@ class FeedbackSurveyModal extends React.PureComponent {
     )
   }
 
-  renderButtons() {
-    return (
-      <div>
-        <button onClick={this.props.onBackButton}>Back</button>
-        <button onClick={this.props.onSubmit} disabled={this.hasAllUnchecked()}>
-          Next
-        </button>
-      </div>
-    )
-  }
-
   renderCommentForm() {
     if (!this.props.showCommentForm) return
     return (
@@ -108,7 +98,11 @@ class FeedbackSurveyModal extends React.PureComponent {
           ))}
         </div>
         {this.renderCommentForm()}
-        {this.renderButtons()}
+        <Buttons
+          disabled={this.hasAllUnchecked()}
+          onBackButton={this.props.onBackButton}
+          onSubmit={this.props.onSubmit}
+        />
       </div>
     )
   }
