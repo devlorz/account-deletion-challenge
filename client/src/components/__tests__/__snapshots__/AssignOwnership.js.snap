@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot 1`] = `
+<div
+  data-reactroot=""
+  style="text-decoration: underline; cursor: pointer;"
+>
+  <select
+    style="min-width: 3rem;"
+  >
+    <option
+      disabled=""
+      value=""
+    />
+    <option
+      value="user2"
+    >
+      Ryan Lynch
+    </option>
+    <option
+      value="user3"
+    >
+      Riker Lynch
+    </option>
+    <option
+      value="user4"
+    >
+      Rydel Lynch
+    </option>
+  </select>
+</div>
+`;
