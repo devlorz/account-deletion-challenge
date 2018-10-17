@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot 1`] = `
+<div
+  data-reactroot=""
+>
+  <input
+    name="stack"
+    placeholder="placeholder"
+    type="text"
+  />
+</div>
+`;

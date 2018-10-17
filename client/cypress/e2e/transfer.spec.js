@@ -24,8 +24,10 @@ describe('Transfer', () => {
     cy.getByLabelText('I do not understand how to use this.').check()
     cy.getByLabelText('I do not need this.').check()
     cy.getByLabelText('I prefer other apps.').check()
+    cy.getByLabelText('Other reason(s)...').check()
+    cy.get(':nth-child(8) > div > input').type('other reasons...')
 
-    cy.get('textarea').type('other reason...')
+    cy.get('textarea').type('some comments...')
     cy.getByText('Next').click()
 
     // confirm

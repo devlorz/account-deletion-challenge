@@ -5,6 +5,7 @@ import React from 'react'
 import { feedbackSurveyItems } from '../FeedbackSurveyItems'
 import Buttons from '../components/Buttons'
 import CommentForm from '../components/CommentForm'
+import InputForm from '../components/InputForm'
 
 class FeedbackSurveyModal extends React.PureComponent {
   static propTypes = {
@@ -48,15 +49,6 @@ class FeedbackSurveyModal extends React.PureComponent {
     this.setState({ isFocusCommentBox: !this.state.isFocusCommentBox })
   }
 
-  renderInputForm({ stack, canComment, placeHolder }) {
-    const prefill = placeHolder && canComment ? placeHolder : ''
-    return !this.state[stack] ? null : (
-      <div style={!canComment ? { display: 'none' } : null}>
-        <input type="text" name={stack} ref={stack} placeholder={prefill} />
-      </div>
-    )
-  }
-
   render() {
     return (
       <div>
@@ -72,7 +64,12 @@ class FeedbackSurveyModal extends React.PureComponent {
                 />
                 {item.title}
               </label>
-              {this.renderInputForm(item)}
+              <InputForm
+                stack={item.stack}
+                canComment={item.canComment}
+                placeHolder={item.placeHolder}
+                isRender={this.state[item.stack]}
+              />
             </div>
           ))}
         </div>

@@ -18,6 +18,7 @@ exports[`snapshot 1`] = `
         I do not understand how to use this.
         <!-- /react-text -->
       </label>
+      <!-- react-empty: 8 -->
     </div>
     <div>
       <label>
@@ -25,10 +26,11 @@ exports[`snapshot 1`] = `
           type="checkbox"
           value="on"
         />
-        <!-- react-text: 11 -->
+        <!-- react-text: 12 -->
         I do not need this.
         <!-- /react-text -->
       </label>
+      <!-- react-empty: 13 -->
     </div>
     <div>
       <label>
@@ -36,10 +38,11 @@ exports[`snapshot 1`] = `
           type="checkbox"
           value="on"
         />
-        <!-- react-text: 15 -->
+        <!-- react-text: 17 -->
         I prefer other apps.
         <!-- /react-text -->
       </label>
+      <!-- react-empty: 18 -->
     </div>
     <div>
       <label>
@@ -47,21 +50,11 @@ exports[`snapshot 1`] = `
           type="checkbox"
           value="on"
         />
-        <!-- react-text: 19 -->
+        <!-- react-text: 22 -->
         I cannot find the features that I want.
         <!-- /react-text -->
       </label>
-    </div>
-    <div>
-      <label>
-        <input
-          type="checkbox"
-          value="on"
-        />
-        <!-- react-text: 23 -->
-        I found this had too many bugs.
-        <!-- /react-text -->
-      </label>
+      <!-- react-empty: 23 -->
     </div>
     <div>
       <label>
@@ -70,9 +63,22 @@ exports[`snapshot 1`] = `
           value="on"
         />
         <!-- react-text: 27 -->
+        I found this had too many bugs.
+        <!-- /react-text -->
+      </label>
+      <!-- react-empty: 28 -->
+    </div>
+    <div>
+      <label>
+        <input
+          type="checkbox"
+          value="on"
+        />
+        <!-- react-text: 32 -->
         I found this was too expensive.
         <!-- /react-text -->
       </label>
+      <!-- react-empty: 33 -->
     </div>
     <div>
       <label>
@@ -80,10 +86,11 @@ exports[`snapshot 1`] = `
           type="checkbox"
           value="on"
         />
-        <!-- react-text: 31 -->
+        <!-- react-text: 37 -->
         I found this was too slow.
         <!-- /react-text -->
       </label>
+      <!-- react-empty: 38 -->
     </div>
     <div>
       <label>
@@ -91,16 +98,17 @@ exports[`snapshot 1`] = `
           type="checkbox"
           value="on"
         />
-        <!-- react-text: 35 -->
+        <!-- react-text: 42 -->
         Other reason(s)...
         <!-- /react-text -->
       </label>
+      <!-- react-empty: 43 -->
     </div>
   </div>
   <div
     style="margin-top: 2rem;"
   >
-    <!-- react-text: 37 -->
+    <!-- react-text: 45 -->
     Comments:
     <!-- /react-text -->
     <div>
@@ -142,6 +150,7 @@ exports[`snapshot with no show comment 1`] = `
         I do not understand how to use this.
         <!-- /react-text -->
       </label>
+      <!-- react-empty: 8 -->
     </div>
     <div>
       <label>
@@ -149,10 +158,11 @@ exports[`snapshot with no show comment 1`] = `
           type="checkbox"
           value="on"
         />
-        <!-- react-text: 11 -->
+        <!-- react-text: 12 -->
         I do not need this.
         <!-- /react-text -->
       </label>
+      <!-- react-empty: 13 -->
     </div>
     <div>
       <label>
@@ -160,10 +170,11 @@ exports[`snapshot with no show comment 1`] = `
           type="checkbox"
           value="on"
         />
-        <!-- react-text: 15 -->
+        <!-- react-text: 17 -->
         I prefer other apps.
         <!-- /react-text -->
       </label>
+      <!-- react-empty: 18 -->
     </div>
     <div>
       <label>
@@ -171,21 +182,11 @@ exports[`snapshot with no show comment 1`] = `
           type="checkbox"
           value="on"
         />
-        <!-- react-text: 19 -->
+        <!-- react-text: 22 -->
         I cannot find the features that I want.
         <!-- /react-text -->
       </label>
-    </div>
-    <div>
-      <label>
-        <input
-          type="checkbox"
-          value="on"
-        />
-        <!-- react-text: 23 -->
-        I found this had too many bugs.
-        <!-- /react-text -->
-      </label>
+      <!-- react-empty: 23 -->
     </div>
     <div>
       <label>
@@ -194,9 +195,22 @@ exports[`snapshot with no show comment 1`] = `
           value="on"
         />
         <!-- react-text: 27 -->
+        I found this had too many bugs.
+        <!-- /react-text -->
+      </label>
+      <!-- react-empty: 28 -->
+    </div>
+    <div>
+      <label>
+        <input
+          type="checkbox"
+          value="on"
+        />
+        <!-- react-text: 32 -->
         I found this was too expensive.
         <!-- /react-text -->
       </label>
+      <!-- react-empty: 33 -->
     </div>
     <div>
       <label>
@@ -204,10 +218,11 @@ exports[`snapshot with no show comment 1`] = `
           type="checkbox"
           value="on"
         />
-        <!-- react-text: 31 -->
+        <!-- react-text: 37 -->
         I found this was too slow.
         <!-- /react-text -->
       </label>
+      <!-- react-empty: 38 -->
     </div>
     <div>
       <label>
@@ -215,13 +230,14 @@ exports[`snapshot with no show comment 1`] = `
           type="checkbox"
           value="on"
         />
-        <!-- react-text: 35 -->
+        <!-- react-text: 42 -->
         Other reason(s)...
         <!-- /react-text -->
       </label>
+      <!-- react-empty: 43 -->
     </div>
   </div>
-  <!-- react-empty: 36 -->
+  <!-- react-empty: 44 -->
   <div>
     <button>
       Back
