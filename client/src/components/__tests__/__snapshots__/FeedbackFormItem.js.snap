@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot 1`] = `
+<div
+  data-reactroot=""
+>
+  <label>
+    <input
+      type="checkbox"
+      value="on"
+    />
+    <!-- react-text: 4 -->
+    Other reason(s)...
+    <!-- /react-text -->
+  </label>
+  <div>
+    <input
+      name="others"
+      placeholder="Please specify"
+      type="text"
+    />
+  </div>
+</div>
+`;

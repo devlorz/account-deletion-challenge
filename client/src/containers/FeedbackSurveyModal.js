@@ -5,7 +5,7 @@ import React from 'react'
 import { feedbackSurveyItems } from '../FeedbackSurveyItems'
 import Buttons from '../components/Buttons'
 import CommentForm from '../components/CommentForm'
-import InputForm from '../components/InputForm'
+import FeedbackFormItem from '../components/FeedbackFormItem'
 
 class FeedbackSurveyModal extends React.PureComponent {
   static propTypes = {
@@ -55,22 +55,12 @@ class FeedbackSurveyModal extends React.PureComponent {
         <h1>{this.props.title}</h1>
         <div>
           {_.map(feedbackSurveyItems, (item, key) => (
-            <div key={key}>
-              <label>
-                <input
-                  type="checkbox"
-                  checked={this.state[item.stack]}
-                  onClick={() => this.onToggleFeedback(item.stack)}
-                />
-                {item.title}
-              </label>
-              <InputForm
-                stack={item.stack}
-                canComment={item.canComment}
-                placeHolder={item.placeHolder}
-                isRender={this.state[item.stack]}
-              />
-            </div>
+            <FeedbackFormItem
+              item={item}
+              key={key}
+              isChecked={this.state[item.stack]}
+              onCheckBoxClick={() => this.onToggleFeedback(item.stack)}
+            />
           ))}
         </div>
         <CommentForm
